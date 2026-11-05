@@ -7,10 +7,7 @@ export async function generateQRDataUrl(token: string, appUrl: string): Promise<
       errorCorrectionLevel: "M",
       margin: 2,
       width: 300,
-      color: {
-        dark: "#0F172A",
-        light: "#FFFFFF",
-      },
+      color: { dark: "#0F172A", light: "#FFFFFF" },
     });
     return dataUrl;
   } catch (err) {
